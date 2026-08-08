@@ -1,0 +1,384 @@
+<!DOCTYPE <html>  
+<html>
+
+<head>
+    <title>Baking Mellow Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #fff8f0;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links,
+.icons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+        .nav-links a {
+            text-decoration: none;
+            color: #4b2e2e;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #b8860b;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 22px;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #4b2e2e;
+        }
+
+        .icons a:hover {
+            color: #b8860b;
+        }
+
+/* Hero Section Layout like Layers */
+.hero-section {
+  background-color: #fff8f0;
+  padding: 60px 40px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1;
+}
+
+.hero-images img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+  color: #4b2e2e;
+}
+
+.hero-text h1 {
+  color: #5C4033;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 60px 80px;
+            text-align: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 5px;
+            color: #5C4033;
+            font-size: 22px;
+        }
+
+        .product-card p {
+            padding: 0 15px 20px;
+            color: #4b2e2e;
+            font-size: 16px;
+        }
+
+        /* Customer Reviews Slider */
+        .reviews {
+            background-color: #fff2e1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .reviews h2 {
+            color: #5C4033;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.8s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            color: #4b2e2e;
+        }
+
+        .slide p {
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .slide h4 {
+            font-weight: bold;
+            color: #5C4033;
+        }
+
+        /* Dots */
+        .dots {
+            margin-top: 15px;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #d2b48c;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #5C4033;
+        }
+
+        footer {
+            background-color: #D2B48C;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            color: #4b2e2e;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+  <div class="nav-links">
+
+    <div class="logo">
+      <a href="home.html">
+        <img src="logo.jpg" alt="Baking Mellow Logo">
+      </a>
+    </div>
+
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="social.html">Social Media</a>
+    <a href="contact.html">Contact Us</a>
+	
+  </div>
+
+  <div class="icons">
+    <a href="signup.html">👤</a>
+    <a href="login.html">🔑</a>
+    <a href="cart.html">🛒</a>
+  </div>
+</div>
+
+
+   
+   <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-container">
+   <div class="hero-images">
+      <img src="bm.png" alt="logo">
+      <img src="brownie.png" alt="Cupcakes">
+      <img src="cupcake.png" alt="Donuts">
+    </div>
+
+    <div class="hero-text">
+      <h1> -Welcome to Baking Mellow 🍩</h1>
+      <p>Welcome to <b>Baking Mellow</b> — your favorite bakery in Sargodha, Pakistan!</p>
+      <p>Founded in <b>Sargodha</b> in <b>2024</b>, our philosophy is simple — to create connections through delicious treats while striking the perfect balance between customer and baker.</p>
+      <p>We make customized cakes, cupcakes, gift baskets, and bouquets to make every celebration special. 💖</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Product Introduction -->
+    <section class="products">
+        <div class="product-card">
+            <img src="cakess.png" alt="Customized Cake">
+            <h3>Customized Cakes 🎂</h3>
+            <p>Celebrate every occasion with our handcrafted custom cakes designed just for you.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="cupcakes2.png" alt="Cupcakes">
+            <h3>Delicious Cupcakes 🧁</h3>
+            <p>Soft, sweet, and irresistible — our cupcakes bring joy to every moment.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="dounets.png" alt="Donuts">
+            <h3>Fresh Donuts 🍩</h3>
+            <p>Light, fluffy, and perfectly glazed — donuts that melt in your mouth.</p>
+        </div>
+				 <div class="product-card">
+            <img src="brownie2.png" alt="Brownie">
+            <h3>Brownie 🥧</h3>
+            <p>Add sweetness to your surprises with our tasty browinies.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="bouqet.png" alt="Bouquets">
+            <h3>Gift Bouquets 💐</h3>
+            <p>Add sweetness to your surprises with our charming bouquet collection.</p>
+        </div>
+		
+		 <div class="product-card">
+            <img src="giftbasket.png" alt="giftbasket">
+            <h3>Gift Baskets 🎁</h3>
+            <p>Add sweetness to your surprises with our charming baskets collection.</p>
+        </div>
+		
+		
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <h2>💬 What Our Customers Say</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <p>“Absolutely loved my birthday cake! The design was perfect and the taste was divine.”</p>
+                    <h4>- Ayesha R.</h4>
+                </div>
+                <div class="slide">
+                    <p>“Cupcakes were soft and moist. You can tell they’re baked with love!”</p>
+                    <h4>- Hira K.</h4>
+                </div>
+                <div class="slide">
+                    <p>“Ordered donuts for my office — everyone couldn’t stop talking about them!”</p>
+                    <h4>- Sarah M.</h4>
+                </div>
+                <div class="slide">
+                    <p>“Their bouquet and gift basket combo made my friend’s day so special. Highly recommend!”</p>
+                    <h4>- Aliya S.</h4>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>📍 Sargodha, Pakistan</p>
+        <p>📞 +92 3426275592 | 📧 bakingmellow@gmail.com</p>
+        <p>© 2025 BakingMellow | Powered by MEERAB IMRAN</p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelector(".slides");
+        const dots = document.querySelectorAll(".dot");
+
+        function showSlide(i) {
+            slides.style.transform = `translateX(-${i * 100}%)`;
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === i);
+            });
+        }
+
+        function nextSlide() {
+            index = (index + 1) % dots.length;
+            showSlide(index);
+        }
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                index = i;
+                showSlide(index);
+            });
+        });
+
+        setInterval(nextSlide, 4000); // Auto slide every 2 seconds
+    </script>
+
+</body>
+
+</html>

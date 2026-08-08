@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Baking Mellow</title>
+    <style>
+        body { font-family: Georgia, serif; background: #fff8f2; text-align: center; color: #5c4636; margin: 0; padding: 20px; }
+        .checkout-box {
+            background: #fff; width: 100%; max-width: 450px; margin: 50px auto;
+            padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h2 { color: #b69b72; margin-bottom: 10px; }
+        .summary-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .total-row { font-size: 24px; font-weight: bold; margin-top: 20px; color: #5c4636; }
+        .confirm-btn {
+            background: #5c4636; color: white; border: none; padding: 15px;
+            width: 100%; border-radius: 10px; font-size: 18px; cursor: pointer;
+            margin-top: 25px; transition: 0.3s;
+        }
+        .confirm-btn:hover { background: #b69b72; }
+        .back-link { display: block; margin-top: 20px; text-decoration: none; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="checkout-box">
+        <h2>Order Confirmation 🥯</h2>
+        <p>Please review your total before finishing.</p>
+        
+        <div id="summaryList">
+            </div>
+
+        <div class="total-row">
+            Total: Rs <span id="displayTotal">0</span>
+        </div>
+
+        <button onclick="processCheckout()" class="confirm-btn">Confirm & Pay</button>
+        <a href="cart.html" class="back-link">Return to Cart</a>
+    </div>
+
+    <script>
+        // 1. Get Cart Data
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let grandTotal = 0;
+        const summaryList = document.getElementById("summaryList");
+
+        if(cart.length === 0) {
+            alert("Your cart is empty!");
+            window.location.href = "menu.html";
+        }
+
+        // 2. Display the summary
+        cart.forEach(item => {
+            let itemTotal = item.price * item.qty;
+            grandTotal += itemTotal;
+            summaryList.innerHTML += `
+                <div class="summary-item">
+                    <span>${item.name} (x${item.qty})</span>
+                    <span>Rs ${itemTotal}</span>
+                </div>`;
+        });
+        document.getElementById("displayTotal").innerText = grandTotal;
+
+        // 3. Send to PHP
+        async function processCheckout() {
+            let formData = new FormData();
+            formData.append('total', grandTotal); // Sending 'total' to match your PHP
+
+            try {
+                let response = await fetch('checkout_process.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                let result = await response.text();
+
+                if (result.trim() === "SUCCESS") {
+                    alert("Order placed successfully! 🍩");
+                    localStorage.removeItem("cart"); // Clear the cart
+                    window.location.href = "home.html";
+                } else {
+                    alert(result);
+                    if(result.includes("login")) window.location.href = "login.html";
+                }
+            } catch (error) {
+                alert("Connection error. Please check your internet.");
+            }
+        }
+    </script>
+</body>
+</html>
