@@ -1,7 +1,7 @@
 ```markdown
 # Baking Mellow - Bakery E-Commerce Website 🍩🧁
 
-![Baking Mellow screenshot](screenshots/homee.jpeg)
+![Baking Mellow screenshot](screenshots/homee.png)
 
 Baking Mellow is a beautifully designed, full-stack web application for a home-based bakery in Sargodha, Pakistan. It allows customers to browse baked goods, add custom items to a cart, place orders, create accounts, and contact the bakery—all powered by a PHP and MySQL backend.
 
@@ -25,14 +25,14 @@ Baking Mellow is a beautifully designed, full-stack web application for a home-b
 
 | Page | Preview |
 |------|---------|
-| **Home** | ![Home](screenshots/homee.jpeg) |
-| **Menu** | ![Menu](screenshots/meenuu.jpeg) |
+| **Home** | ![Home](screenshots/homee.png) |
+| **Menu** | ![Menu](screenshots/meenuu.png) |
 | **Cart** | ![Cart](screenshots/cart.jpeg) |
-| **Checkout** | ![Checkout](screenshots/checkout.jpeg) |
-| **Login** | ![Login](screenshots/loginnn.jpeg) |
-| **Signup** | ![Signup](screenshots/signup.jpeg) |
-| **Contact Us** | ![Contact](screenshots/contactus.jpeg) |
-| **Social Media** | ![Social](screenshots/social.jpeg) |
+| **Checkout** | ![Checkout](screenshots/checkout.png) |
+| **Login** | ![Login](screenshots/loginnn.png) |
+| **Signup** | ![Signup](screenshots/signup.pngg) |
+| **Contact Us** | ![Contact](screenshots/contactus.png) |
+| **Social Media** | ![Social](screenshots/social.png) |
 
 ---
 
