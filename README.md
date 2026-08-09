@@ -1,14 +1,3 @@
-Here is the **fixed `README.md` file** with the broken image links corrected. 
-
-**What was fixed:**
-1. Replaced the corrupted `�` (mojibake) characters with clean text headers.
-2. Fixed the screenshot section to properly display images using **relative paths** (since your images are likely in a `screenshots/` folder alongside your code).
-3. Made the image links clickable so they open directly when viewed on GitHub.
-
-Just copy and paste the code below into your `README.md` file and replace it.
-
----
-
 ```markdown
 # Baking Mellow - Bakery E-Commerce Website 🍩🧁
 
@@ -36,16 +25,14 @@ Below are sample screens from the Baking Mellow web app.
 
 | Page | Preview |
 |------|---------|
-| **Home** | ![Home](screenshots/homee.jpeg) |
-| **Menu** | ![Menu](screenshots/meenuu.jpeg) |
-| **Cart** | ![Cart](screenshots/cart.jpeg) |
-| **Checkout** | ![Checkout](screenshots/checkout.jpeg) |
-| **Login** | ![Login](screenshots/loginnn.jpeg) |
-| **Signup** | ![Signup](screenshots/signup.jpeg) |
-| **Contact Us** | ![Contact](screenshots/contactus.jpeg) |
-| **Social Media** | ![Social](screenshots/social.jpeg) |
-
-> 💡 *If the images do not load, please make sure you have a `screenshots/` folder inside your project root and that the filenames match exactly.*
+| **Home** | ![Home](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/homee.jpeg) |
+| **Menu** | ![Menu](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/meenuu.jpeg) |
+| **Cart** | ![Cart](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/cart.jpeg) |
+| **Checkout** | ![Checkout](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/checkout.jpeg) |
+| **Login** | ![Login](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/loginnn.jpeg) |
+| **Signup** | ![Signup](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/signup.jpeg) |
+| **Contact Us** | ![Contact](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/contactus.jpeg) |
+| **Social Media** | ![Social](https://raw.githubusercontent.com/meerabimran/baking-mellow/main/screenshots/social.jpeg) |
 
 ---
 
