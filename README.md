@@ -22,15 +22,15 @@ Baking Mellow is a beautifully designed, full-stack web application for a home-b
 
 | Page | Preview |
 |------|---------|
-| **Home** | ![Home](screenshots/homee.png) |
-| **Menu** | ![Menu](screenshots/meenuu.png) |
-| **Cart** | ![Cart](screenshots/cart.png) |
-| **Checkout** | ![Checkout](screenshots/checkout.png) |
-| **Login** | ![Login](screenshots/loginnn.png) |
-| **Signup** | ![Signup](screenshots/signup.png) |
-| **About Us** | ![About](screenshots/aboutus.png) |
-| **Contact Us** | ![Contact](screenshots/contactus.png) |
-| **Social Media** | ![Social](screenshots/social.png) |
+| **Home** | ![Home](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/homee.png) |
+| **Menu** | ![Menu](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/meenuu.png) |
+| **Cart** | ![Cart](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/cart.png) |
+| **Checkout** | ![Checkout](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/checkout.png) |
+| **Login** | ![Login](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/loginnn.png) |
+| **Signup** | ![Signup](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/signup.png) |
+| **About Us** | ![About](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/aboutus.png) |
+| **Contact Us** | ![Contact](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/contactus.png) |
+| **Social Media** | ![Social](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/social.png) |
 
 ---
 
