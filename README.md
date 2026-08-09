@@ -1,7 +1,7 @@
 ```markdown
 # Baking Mellow - Bakery E-Commerce Website 🍩🧁
 
-![Baking Mellow screenshot](screenshots/homee.jpeg)
+![Baking Mellow screenshot](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/homee.jpeg)
 
 Baking Mellow is a beautifully designed, full-stack web application for a home-based bakery in Sargodha, Pakistan. It allows customers to browse baked goods, add custom items to a cart, place orders, create accounts, and contact the bakery—all powered by a PHP and MySQL backend.
 
@@ -25,14 +25,14 @@ Baking Mellow is a beautifully designed, full-stack web application for a home-b
 
 | Page | Preview |
 |------|---------|
-| **Home** | ![Home](screenshots/homee.jpeg) |
-| **Menu** | ![Menu](screenshots/meenuu.jpeg) |
-| **Cart** | ![Cart](screenshots/cart.jpeg) |
-| **Checkout** | ![Checkout](screenshots/checkout.jpeg) |
-| **Login** | ![Login](screenshots/loginnn.jpeg) |
-| **Signup** | ![Signup](screenshots/signup.jpeg) |
-| **Contact Us** | ![Contact](screenshots/contactus.jpeg) |
-| **Social Media** | ![Social](screenshots/social.jpeg) |
+| **Home** | ![Home](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/homee.jpeg) |
+| **Menu** | ![Menu](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/meenuu.jpeg) |
+| **Cart** | ![Cart](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/cart.jpeg) |
+| **Checkout** | ![Checkout](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/checkout.jpeg) |
+| **Login** | ![Login](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/loginnn.jpeg) |
+| **Signup** | ![Signup](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/signup.jpeg) |
+| **Contact Us** | ![Contact](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/contactus.jpeg) |
+| **Social Media** | ![Social](https://raw.githubusercontent.com/meerabimran/bakingmelloww/main/screenshots/social.jpeg) |
 
 ---
 
