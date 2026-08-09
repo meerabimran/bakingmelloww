@@ -18,7 +18,16 @@ Social Media Integration: Quick links to Instagram, Facebook, and WhatsApp.
 
 Customer Reviews: Auto-playing testimonial slider on the homepage.
 
-📁 Project Structure
+� Screenshots
+Below are sample screens from the Baking Mellow web app. Open the images from the `screenshots/` folder to preview the pages.
+
+- Home: `screenshots/homee.jpeg`
+- Menu: `screenshots/meenuu.jpeg`
+- Cart / Checkout: `screenshots/cart (2).jpeg`, `screenshots/checkout (2).jpeg`
+- Login / Signup: `screenshots/loginnn.jpeg`, `screenshots/signup.jpeg`
+- Contact / Social: `screenshots/contactus.jpeg`, `screenshots/social.jpeg`
+
+�📁 Project Structure
 text
 baking-mellow/
 │
